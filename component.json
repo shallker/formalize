@@ -5,10 +5,11 @@
   "version": "1.0.0",
   "keywords": [],
   "dependencies": {
-    "shallker/ie-event-standardizer": "*",
-    "component/jquery": "*"
+    "shallker/ie-event-standardizer": "*"
   },
-  "development": {},
+  "development": {
+    "component/jquery": "1.8.3"
+  },
   "license": "MIT",
   "main": "index.js",
   "scripts": [
