@@ -1,3 +1,5 @@
+require('ie-event-standardizer');
+
 /**
  * Formalize custom inputs into form elements, or at least let them behave like 
  * form elements.
