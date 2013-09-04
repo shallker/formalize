@@ -1,0 +1,16 @@
+{
+  "name": "formalize",
+  "repo": "shallker/formalize",
+  "description": "Formalize custom form elements.",
+  "version": "1.0.0",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "lib/radio.js",
+    "lib/checkbox.js"
+  ]
+}
