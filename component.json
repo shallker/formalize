@@ -4,7 +4,10 @@
   "description": "Formalize custom form elements.",
   "version": "1.0.0",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "shallker/ie-event-standardizer": "*",
+    "component/jquery": "*"
+  },
   "development": {},
   "license": "MIT",
   "main": "index.js",
