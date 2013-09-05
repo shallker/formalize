@@ -5,7 +5,8 @@
   "version": "1.0.0",
   "keywords": [],
   "dependencies": {
-    "shallker/ie-event-standardizer": "*"
+    "shallker/ie-event-standardizer": "*",
+    "shallker-wang/eventy": "*"
   },
   "development": {
     "component/jquery": "1.8.3"
