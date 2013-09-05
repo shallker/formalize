@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "keywords": [],
   "dependencies": {
-    "shallker/ie-event-standardizer": "*",
+    "shallker/ie-event-polyfill": "*",
     "shallker-wang/eventy": "*"
   },
   "development": {
