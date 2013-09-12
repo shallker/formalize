@@ -1,5 +1,5 @@
 build/build.js: index.js lib/*.js
-	@component build
+	@component build --dev
 	@echo build
 
 components: component.json
