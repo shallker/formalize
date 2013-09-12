@@ -5,7 +5,8 @@
   "version": "1.0.0",
   "keywords": [],
   "dependencies": {
-    "shallker-wang/eventy": "*"
+    "shallker-wang/eventy": "*",
+    "shallker/dom-event-shim": "*"
   },
   "development": {
     "component/jquery": "1.8.3"
