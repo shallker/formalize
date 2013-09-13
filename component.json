@@ -4,9 +4,15 @@
   "description": "Formalize custom form elements.",
   "version": "1.0.0",
   "keywords": [],
+  "paths": [
+    "/Users/shallker/github/shallker-wang"
+  ],
+  "local": [
+    "eventy"
+  ],
   "dependencies": {
     "shallker-wang/eventy": "*",
-    "shallker/ie8": "*"
+    "shallker/dom-event-shim": "*"
   },
   "development": {
     "component/jquery": "1.8.3"
