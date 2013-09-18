@@ -4,12 +4,6 @@
   "description": "Formalize custom form elements.",
   "version": "1.0.0",
   "keywords": [],
-  "paths": [
-    "/Users/shallker/github/shallker-wang"
-  ],
-  "local": [
-    "eventy"
-  ],
   "dependencies": {
     "shallker-wang/eventy": "*",
     "shallker/dom-event-shim": "*"
