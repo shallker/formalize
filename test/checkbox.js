@@ -1,32 +1,28 @@
-var ok = function (v) {if (!v) throw v + ' is not ok'},
-    eq = function (a, b) {if (a !== b) throw a + ' not equal ' + b},
-    s = function (data) {eq(Object.prototype.toString.call(data), '[object String]')},
-    f = function (data) {eq(Object.prototype.toString.call(data), '[object Function]')},
-    a = function (data) {eq(Object.prototype.toString.call(data), '[object Array]')},
-    b = function (data) {eq(Object.prototype.toString.call(data), '[object Boolean]')},
-    o = function (data) {eq(Object.prototype.toString.call(data), '[object Object]')};
+var ok = function (x) {if (!x) throw new Error(x + ' is not ok')},
+    eq = function (x, y) {if (x !== y) throw new Error(x + ' not equal ' + y)},
+    s = function (x) {eq(Object.prototype.toString.call(x), '[object String]')},
+    f = function (x) {eq(Object.prototype.toString.call(x), '[object Function]')},
+    a = function (x) {eq(Object.prototype.toString.call(x), '[object Array]')},
+    b = function (x) {eq(Object.prototype.toString.call(x), '[object Boolean]')},
+    o = function (x) {eq(Object.prototype.toString.call(x), '[object Object]')};
 
-var $ = jQuery = require('jquery');
 var Checkbox = require('formalize').Checkbox;
 
+var checkbox = new Checkbox(document.getElementById('my-checkbox'))
+var checkboxElement = document.getElementById('my-checkbox');
 
-$(function () {
-  new Checkbox(document.getElementById('my-checkbox'))
-  window.cb = document.getElementById('my-checkbox')
-  s(cb.type)
-  s(cb.name)
-  s(cb.value)
-  b(cb.defaultChecked)
-  b(cb.checked)
-  b(cb.disabled)
-  // o(cb.form)
+s(checkboxElement.type)
+s(checkboxElement.name)
+s(checkboxElement.value)
+b(checkboxElement.defaultChecked)
+b(checkboxElement.checked)
+b(checkboxElement.disabled)
+ok(checkboxElement.form)
 
-  eq(cb.defaultChecked, true)
-  cb.defaultChecked = false
-  eq(cb.defaultChecked, true)
+eq(checkboxElement.defaultChecked, true)
+checkboxElement.defaultChecked = false
+eq(checkboxElement.defaultChecked, true)
 
-  eq(cb.checked, true);
-  cb.checked = false
-  eq(cb.checked, false);
-
-})
+eq(checkboxElement.checked, true);
+checkboxElement.checked = false
+eq(checkboxElement.checked, false);
