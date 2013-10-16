@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><style type="text/css">.my.input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  background-color: #ddd;
+  cursor: pointer;
+}
+.my.input[type="checkbox"][checked] {
+  background-color: #008000;
+}
+</style>
+  </head>
+  <body>
+    <form>
+      <div id="my-checkbox" type="checkbox" name="foo" value="bar" checked class="my input"></div>
+      <input id="checkbox" type="checkbox">
+    </form>
+    <script src="../build/build.js"></script>
+    <script src="./checkbox.js"></script>
+  </body>
+</html>

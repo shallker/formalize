@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><style type="text/css">.my.input[type="radio"] {
+  width: 14px;
+  height: 14px;
+  background-color: #ddd;
+  cursor: pointer;
+}
+.my.input[type="radio"][checked] {
+  background-color: #008000;
+}
+</style>
+  </head>
+  <body>
+    <form>
+      <div type="radio" name="foo" value="hi" checked class="my input"></div>
+      <div type="radio" name="foo" value="ho" class="my input"></div>
+      <input type="radio">
+    </form>
+    <script src="../build/build.js"></script>
+    <script src="./radio.js"></script>
+  </body>
+</html>
