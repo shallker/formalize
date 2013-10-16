@@ -18,6 +18,9 @@ $('.my.input[type=radio]').each(function (element) {
 });
 ```
 
+## Reference
+For all the properties and methods a native form element has, see [doc.md](https://raw.github.com/shallker/formalize/master/doc.md).
+
 ## API
 ### Radio
 ```javascript
