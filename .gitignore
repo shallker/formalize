@@ -1,5 +1,3 @@
 components
 build
-doc.md
-*.concept.js
-
+test/*.html
