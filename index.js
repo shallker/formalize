@@ -2,8 +2,7 @@
  * Formalize custom inputs into form elements, or at least let them behave like 
  * form elements.
  */
-
-exports.version = '1.0.0';
+require('dom-event-shim');
 
 exports.Radio = require('./lib/radio');
 
