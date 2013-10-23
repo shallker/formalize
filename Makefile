@@ -1,6 +1,8 @@
-build/build.js: index.js lib/*.js
+build/build.js: components index.js lib/*.js
 	@component build --dev
-	@echo build
+	@touch build/done
+	@rm build/done
+	@echo build done
 
 components: component.json
 	@component install --dev
