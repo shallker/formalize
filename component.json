@@ -9,7 +9,9 @@
     "shallker/dom-event-shim": "*",
     "component/jquery": "1.8.3"
   },
-  "development": {},
+  "development": {
+    "shallker/simple-test": "*"
+  },
   "license": "MIT",
   "main": "index.js",
   "scripts": [
