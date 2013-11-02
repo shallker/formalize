@@ -83,6 +83,15 @@ return attribute value of checkbox
 return the parent form element of checkbox
 
 
+## Compatibility
+- IE 9+
+- Firefox 3+
+- Safari 4+
+- Chrome 29+
+
+## Note
+`defineProperty(element, 'checked')` would replace `element.setAttribute('checked')` 's actual functionality in IE8, so technically it's impossible to manipulate element attributes in DOM afterwards, so it's not supported.
+
 ## Test
   http://shallker.github.io/formalize/test/radio.html   
   http://shallker.github.io/formalize/test/checkbox.html   
